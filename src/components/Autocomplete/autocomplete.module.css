@@ -1,0 +1,83 @@
+.container {
+  border: 0;
+  border-bottom: 1px solid grey;
+  cursor: text;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.container:focus-within {
+  border-bottom: 2px solid blue;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.input {
+  border: 0;
+  padding: 4px;
+  padding-bottom: 10px;
+}
+
+.input:focus,
+.input:focus-visible {
+  outline: 0;
+}
+
+.list {
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  box-shadow: 2px 2px 5px 2px #c3c3c3;
+  padding-inline: 0;
+  height: 18rem;
+  overflow-y: auto;
+}
+
+.chipsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.listItem:hover {
+  background-color: #f1f1f1;
+}
+
+.listItem:focus,
+.listItem:focus-visible {
+  background-color: #b2b2b2;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 3rem;
+  aspect-ratio: 1;
+}
+
+.userInfo {
+  display: flex;
+  align-items: baseline;
+  flex-grow: 1;
+  justify-content: space-between;
+  gap: 1rem;
+  text-wrap: nowrap;
+}
+
+.name {
+  font-size: 1rem;
+}
+
+.email {
+  font-size: 12px;
+  color: #616161;
+}
